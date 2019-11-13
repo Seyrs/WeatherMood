@@ -1,0 +1,74 @@
+body {
+  background-image: url("default.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow:2px 2px 1px black;
+  font-family: serif;
+}
+#weather-container {
+background:(0,0,0,0.5);
+box-shadow: 1px 1px 5px black;
+padding: 50px;
+position: absolute;
+left: 445px;
+border-radius: 10px;
+visibility: hidden;
+}
+#weather-container h1{
+margin: 5px;
+font-size: 40px;
+font-family: sans-serif;
+}
+#search-container {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} 
+#search-container input {
+width: 200px;
+}
+#search-container button {
+  width: 75px;
+  background: rgb(0,100,200);
+  }
+.search-city {
+border-radius: 5px;
+padding: 5px;
+border: none;
+}
+#weatherMain {
+  display: block;
+  margin-bottom: 25px;
+}
+#weatherMain div{
+  display: inline;
+  padding: 3px;
+}
+#weatherDescription {
+vertical-align: 50%;
+font-size: 25px;
+}
+#temperature {
+  font-size: 20px;
+  vertical-align: 60%;
+}
+
+#music-player-clear {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+ height: 400px;
+ width: 400px;
+ visibility: hidden;
+
+}
+
+
+
+
+
+
+ 
+
