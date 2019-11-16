@@ -25,7 +25,7 @@ font-family: sans-serif;
   position: absolute;
   top: 0;
   right: 0;
-} 
+}
 #search-container input {
 width: 200px;
 }
@@ -54,21 +54,52 @@ font-size: 25px;
   font-size: 20px;
   vertical-align: 60%;
 }
-
 #music-player-clear {
   position: absolute;
   top: 300px;
-  left: 400px;
- height: 400px;
- width: 400px;
- visibility: hidden;
-
+  left: 570px;
+ height: 75px;
+ width: 75px;
+ display: none;
 }
-
-
-
-
-
-
+#music-player-rain {
+  position: absolute;
+  top: 300px;
+  left: 570px;
+ height: 75px;
+ width: 75px;
+ display: none;
+}
+#music-player-storm {
+  position: absolute;
+  top: 300px;
+  left: 570px;
+ height: 75px;
+ width: 75px;
+ display: none;
+}
+#music-player-snow {
+  position: absolute;
+  top: 300px;
+  left: 570px;
+ height: 75px;
+ width: 75px;
+ display: none;
+}
+#music-player-inclement {
+  position: absolute;
+  top: 300px;
+  left: 570px;
+ height: 75px;
+ width: 75px;
+ display: none;
+}
+.output {
+  position: absolute;
+  bottom: 300px;
+  left: 375px;
+ height: 25px;
+ width: 25px;
  
+}
 
