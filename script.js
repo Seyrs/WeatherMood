@@ -1,6 +1,6 @@
+
 var appId = 'bcb42cafda271a2eb84b45ee3a3200b8';
 var units = 'imperial';
-
 function getsearchMethodValidation(searchTerm) {
   if (Number.isInteger(parseInt(searchTerm)) && searchTerm.length === 5) {
       return 'zip';
@@ -8,7 +8,6 @@ function getsearchMethodValidation(searchTerm) {
     return 'q';
     }
 }
-
 function searchWeather(searchTerm)  {
   var searchMethod = getsearchMethodValidation(searchTerm);
   fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appid=${appId}&units=${units}`)
@@ -17,13 +16,11 @@ function searchWeather(searchTerm)  {
   }).then(response => {
     init(response);
     console.log(response);
-
   })
     .catch(error => {
       alert("Invalid Zipcode or City Name. Please re-enter a zip code or City Name");
     })
 }
-
 function init(data) {
   if(data.weather[0].main =="Clear") {
    document.body.style.backgroundImage = 'url("clear.jpeg")';
@@ -53,7 +50,6 @@ function init(data) {
   } else {
    Document.body.style.backgroundImage = 'url("default.jpeg")';
   }
-
   var getcityName = document.getElementById('cityName');
   getcityName.innerHTML = data.name;
   var getTemperature = document.getElementById('temperature');
@@ -64,7 +60,6 @@ function init(data) {
   getWeatherIcon.src = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
   displayWeatherInfo();
   searchPictures(selectPic);
-
   }
   function displayWeatherInfo() {
    var weatherContainer = document.getElementById('weather-container');
@@ -77,15 +72,11 @@ function init(data) {
   } else {
   }
   });
-
   var apiKey = 'LpGRYoMy3u0jMWSHsqfe8CUWKQ9HtnqT';
   var selectPic ='';
-
   async function searchPictures(selectPic)  {
-
     const result = await fetch(`http://api.giphy.com/v1/gifs/search?q=${selectPic}&api_key=${apiKey}&limit=25&`)
                                 .then(res => res.json())
-
     if (result) {
       display(result);
     } else {
@@ -93,23 +84,15 @@ function init(data) {
     }
   
   }
-
 function display(result) {
     var img = document.createElement("img");
-
     var randomIndex = Math.floor(Math.random() * result.data.length)
-
     img.src = result.data[randomIndex].images.downsized.url;
-
     img.style.height = '250px';
     img.style.width = '250px';
-
     var output = document.getElementsByClassName("output")[0];
-
     if (output.hasChildNodes()) {
       output.removeChild(output.childNodes[0])
     }
-
     output.appendChild(img);
 };
- 

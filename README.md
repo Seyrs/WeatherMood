@@ -1,5 +1,13 @@
 # WeatherMood
 api project
+Sourcing from a weather API (open weather) and a music library/API (deezer, also deezer web player) to provide you with a musical playlist that is determined by the mpst current weather for a selected location.
++ bonus giphy API!
+
+-Thanks for reading.
+*Suggestion - turn speakers on for full immersion.
+
+
+
 // Client Secret 89d751617f5c4fef83dc8ff99afd8dfb
 //client ID bdcf70fba097464fad3864b94773634b
 //scope playlist-read-private
