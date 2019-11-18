@@ -64,7 +64,6 @@ function init(data) {
   getWeatherIcon.src = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
   displayWeatherInfo();
   searchPictures(selectPic);
-
   }
   function displayWeatherInfo() {
    var weatherContainer = document.getElementById('weather-container');
@@ -73,15 +72,18 @@ function init(data) {
   document.getElementById('searchBtn').addEventListener('click', ()=>{
   var searchTerm = document.getElementById('searchInput').value;
   if(searchTerm) {
+    var selectPic ='';
     searchWeather(searchTerm);
+   
   } else {
   }
   });
 
   var apiKey = 'LpGRYoMy3u0jMWSHsqfe8CUWKQ9HtnqT';
   var selectPic ='';
-
+ 
   async function searchPictures(selectPic)  {
+    
 
     const result = await fetch(`http://api.giphy.com/v1/gifs/search?q=${selectPic}&api_key=${apiKey}&limit=25&`)
                                 .then(res => res.json())
@@ -91,13 +93,18 @@ function init(data) {
     } else {
       alert("No Pics Found");
     }
-  
+  console.log(selectPic);
   }
 
-function display(result) {
+ function display(result) {
+
+  setInterval(function changePic() {
+
     var img = document.createElement("img");
 
     var randomIndex = Math.floor(Math.random() * result.data.length)
+
+   console.log(randomIndex);
 
     img.src = result.data[randomIndex].images.downsized.url;
 
@@ -111,5 +118,11 @@ function display(result) {
     }
 
     output.appendChild(img);
-};
- 
+
+  },2000);
+
+}
+
+   
+
+
