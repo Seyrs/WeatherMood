@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
   body {
     background-image: url("default.jpeg");
@@ -113,7 +113,6 @@
   h1 {
     color: lightgreen;
   }
-=======
 body {
   background-image: url("default.jpeg");
   background-size: cover;
@@ -142,9 +141,7 @@ text-align: center;
 font-size: 40px;
 font-family: sans-serif;
 }
-#search-container {
 
- }
  #weather-container {
  background:(0,0,0,0.5);
  box-shadow: 1px 1px 5px black;
@@ -159,10 +156,7 @@ font-family: sans-serif;
  font-size: 40px;
  font-family: sans-serif;
  }
- #search-container {
-
-<
-}
+ 
 #search-container input {
 width: 125px;
 }
@@ -189,9 +183,7 @@ vertical-align: 50%;
 font-size: 25px;
 
 }
-#temperature {
 
- }
  #search-container input {
  width: 200px;
  }
@@ -273,4 +265,3 @@ h1 {
   color: lightgreen;
 }
 
->>>>>>> 415160701c7cc4cf32943a33ace8956c7b8143da
