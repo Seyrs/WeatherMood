@@ -1,118 +1,3 @@
-
-
-  body {
-    background-image: url("default.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow:2px 2px 1px black;
-    font-family: serif;
-  }
-  #weather-container {
-  background:(0,0,0,0.5);
-  box-shadow: 1px 1px 5px black;
-  padding: 50px;
-  position: absolute;
-  left: 500px;
-  border-radius: 10px;
-  visibility: hidden;
-  }
-  #weathermood {
-  display: inline;
-  
-  }
-  #weather-container h1{
-  margin: 5px;
-  text-align: center;
-  font-size: 40px;
-  font-family: sans-serif;
-  }
-  #search-container {
-    padding: 15px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #search-container input {
-  width: 125px;
-  }
-  #searchBtn:hover {
-    background-color: lightsalmon;
-    width: 85px;
-  }
-  .search-city {
-  border-radius: 5px;
-  padding: 5px;
-  border: none;
-  }
-  #weatherMain {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  #weatherMain div{
-    display: inline;
-    padding: 3px;
-  }
-  #weatherDescription {
-  vertical-align: 50%;
-  font-size: 25px;
-  
-  }
-  #temperature {
-    font-size: 20px;
-    vertical-align: 60%;
-  }
-  #music-player-clear {
-    position: absolute;
-    top: 300px;
-    left: 550px;
-   height: 75px;
-   width: 75px;
-   display: none;
-  }
-  #music-player-rain {
-    position: absolute;
-    top: 300px;
-    left: 550px;
-   height: 75px;
-   width: 75px;
-   display: none;
-  }
-  #music-player-storm {
-    position: absolute;
-    top: 300px;
-    left: 550px;
-   height: 75px;
-   width: 75px;
-   display: none;
-  }
-  #music-player-snow {
-    position: absolute;
-    top: 300px;
-    left: 550px;
-   height: 75px;
-   width: 75px;
-   display: none;
-  }
-  #music-player-inclement {
-    position: absolute;
-    top: 300px;
-    left: 550px;
-   height: 75px;
-   width: 75px;
-   display: none;
-  }
-  .output {
-    position: absolute;
-    bottom: 300px;
-    left: 465px;
-   height: 25px;
-   width: 25px;
-  }
-  h1 {
-    color: lightgreen;
-  }
 body {
   background-image: url("default.jpeg");
   background-size: cover;
@@ -156,7 +41,7 @@ font-family: sans-serif;
  font-size: 40px;
  font-family: sans-serif;
  }
- 
+
 #search-container input {
 width: 125px;
 }
@@ -264,4 +149,3 @@ font-size: 25px;
 h1 {
   color: lightgreen;
 }
-
