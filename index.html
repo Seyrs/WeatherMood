@@ -1,22 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WeatherMoodScene</title>
+    <title>WeatherMood</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/1de8a77d2a.js" crossorigin="anonymous"></script>
 </head>
 <header>
-    <h1>WeatherMood <i class="fas fa-sun"></i></h1>
+
+  <h1>WeatherMood <i class="fas fa-sun"></i></h1> 
+
 </header>
 <body>
     <div id="search-container">
       <input class="search-city" type="text" placeholder="City Name or Zipcode" id="searchInput">
+
       <button type="submit" class="search-city" id="searchBtn">Search</button>
+
     </div>
     <div class="weathermood" id="weathermood">
       <div id="weather-container">
-          <h1 id="cityName"></h1>
+          <h2 id="cityName"></h2>
           <div id="weatherMain">
               <div id="temperature"></div>
               <div id="weatherDescription"></div>
@@ -24,6 +29,7 @@
           </div>      
       </div>
       <br>
+
       <div id="musicplayer">
       <iframe scrolling="no"  id="music-player-clear" frameborder="0" allowtransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=true&width=75&height=75&color=ff0000&layout=dark&size=big&type=playlist&id=6795790564&app_id=378984" width="75" height="75"></iframe>
      <iframe scrolling="no"  id="music-player-storm" frameborder="0" allowtransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=true&width=75&height=75&color=ff0000&layout=dark&size=big&type=playlist&id=6795842484&app_id=378984" width="75" height="75"></iframe>
@@ -35,6 +41,8 @@
       <div class="output"></div>
     </div>
 <script src="script.js"></script>
+
+
 </body>
 </html>
 
