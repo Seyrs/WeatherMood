@@ -4,7 +4,7 @@ Sourcing from a weather API (open weather) and a music library/API (deezer, also
 + bonus giphy API!
 
 -Thanks for reading.
-*Suggestion - turn speakers on for full immersion.
+*Hit play button to cue curated musical list. - turn speakers on for full immersion.
 
 
 
